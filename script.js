@@ -353,7 +353,7 @@ const mapData = {
 };
 
 // === State ===
-let currentLang = localStorage.getItem('ow2Lang') || 'ja';
+let currentLang = localStorage.getItem('ow2Lang') || 'en';
 let currentMode = 'control';
 let currentMap = null;
 

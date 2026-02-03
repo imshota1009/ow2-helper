@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OW2 Helper | マップ & カウンターピック</title>
+    <title>OW2 Helper | Maps & Counter Picks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,7 +24,7 @@
                 </div>
                 <div class="header-controls">
                     <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">
-                        <span id="current-lang">🇯🇵 JA</span>
+                        <span id="current-lang">🇺🇸 EN</span>
                     </button>
                 </div>
             </div>
@@ -34,19 +34,19 @@
         <nav class="main-nav">
             <button class="nav-btn active" data-section="callouts">
                 <span class="nav-icon">🗺️</span>
-                <span data-i18n="navCallouts">マップコールアウト</span>
+                <span data-i18n="navCallouts">Map Callouts</span>
             </button>
             <button class="nav-btn" data-section="counter">
                 <span class="nav-icon">⚔️</span>
-                <span data-i18n="navCounter">カウンターピック</span>
+                <span data-i18n="navCounter">Counter Picks</span>
             </button>
             <button class="nav-btn" data-section="meta">
                 <span class="nav-icon">📊</span>
-                <span data-i18n="navMeta">メタ分析</span>
+                <span data-i18n="navMeta">Meta Analysis</span>
             </button>
             <button class="nav-btn" data-section="events">
                 <span class="nav-icon">📅</span>
-                <span data-i18n="navEvents">イベント</span>
+                <span data-i18n="navEvents">Events</span>
             </button>
         </nav>
 
@@ -55,16 +55,16 @@
             <!-- Search Bar -->
             <div class="search-container">
                 <input type="text" id="search-input" data-i18n-placeholder="searchPlaceholder"
-                    placeholder="コールアウトを検索...">
+                    placeholder="Search callouts...">
                 <span class="search-icon">🔍</span>
             </div>
 
             <!-- Game Mode Tabs -->
             <nav class="mode-tabs">
-                <button class="mode-tab active" data-mode="control" data-i18n="control">コントロール</button>
-                <button class="mode-tab" data-mode="escort" data-i18n="escort">エスコート</button>
-                <button class="mode-tab" data-mode="hybrid" data-i18n="hybrid">ハイブリッド</button>
-                <button class="mode-tab" data-mode="push" data-i18n="push">プッシュ</button>
+                <button class="mode-tab active" data-mode="control" data-i18n="control">Control</button>
+                <button class="mode-tab" data-mode="escort" data-i18n="escort">Escort</button>
+                <button class="mode-tab" data-mode="hybrid" data-i18n="hybrid">Hybrid</button>
+                <button class="mode-tab" data-mode="push" data-i18n="push">Push</button>
             </nav>
 
             <!-- Map Grid -->
@@ -72,7 +72,7 @@
                 <div id="map-grid" class="map-grid"></div>
                 <div id="callout-panel" class="callout-panel hidden">
                     <button id="back-btn" class="back-btn">
-                        <span>←</span> <span data-i18n="backToMaps">マップ一覧に戻る</span>
+                        <span>←</span> <span data-i18n="backToMaps">Back to Maps</span>
                     </button>
                     <div id="callout-header" class="callout-header"></div>
                     <div id="callout-list" class="callout-list"></div>
@@ -83,31 +83,31 @@
         <!-- COUNTER PICK SECTION -->
         <section id="counter-section" class="section hidden">
             <div class="counter-intro">
-                <h2 data-i18n="counterTitle">⚔️ カウンターピック支援</h2>
-                <p data-i18n="counterDesc">敵チームのヒーローを選択すると、おすすめのカウンターヒーローを提案します</p>
+                <h2 data-i18n="counterTitle">⚔️ Counter Pick Assistant</h2>
+                <p data-i18n="counterDesc">Select enemy heroes to get counter recommendations</p>
             </div>
 
             <!-- Enemy Team Selection -->
             <div class="counter-panel">
-                <h3 data-i18n="enemyTeam">敵チーム構成</h3>
+                <h3 data-i18n="enemyTeam">Enemy Team Composition</h3>
                 <div class="role-section">
                     <div class="role-header">
                         <span class="role-icon tank">🛡️</span>
-                        <span data-i18n="roleTank">タンク</span>
+                        <span data-i18n="roleTank">Tank</span>
                     </div>
                     <div id="enemy-tank" class="hero-selector" data-role="tank"></div>
                 </div>
                 <div class="role-section">
                     <div class="role-header">
                         <span class="role-icon dps">⚔️</span>
-                        <span data-i18n="roleDps">ダメージ</span>
+                        <span data-i18n="roleDps">Damage</span>
                     </div>
                     <div id="enemy-dps" class="hero-selector" data-role="dps"></div>
                 </div>
                 <div class="role-section">
                     <div class="role-header">
                         <span class="role-icon support">💚</span>
-                        <span data-i18n="roleSupport">サポート</span>
+                        <span data-i18n="roleSupport">Support</span>
                     </div>
                     <div id="enemy-support" class="hero-selector" data-role="support"></div>
                 </div>
@@ -115,16 +115,16 @@
 
             <!-- Selected Enemies -->
             <div class="selected-enemies">
-                <h3 data-i18n="selectedEnemies">選択中の敵ヒーロー</h3>
+                <h3 data-i18n="selectedEnemies">Selected Enemy Heroes</h3>
                 <div id="selected-list" class="selected-list">
-                    <p class="no-selection" data-i18n="noSelection">ヒーローを選択してください</p>
+                    <p class="no-selection" data-i18n="noSelection">Select heroes above</p>
                 </div>
-                <button id="clear-selection" class="clear-btn" data-i18n="clearAll">クリア</button>
+                <button id="clear-selection" class="clear-btn" data-i18n="clearAll">Clear</button>
             </div>
 
             <!-- Counter Suggestions -->
             <div id="counter-results" class="counter-results hidden">
-                <h3 data-i18n="recommendedCounters">おすすめカウンター</h3>
+                <h3 data-i18n="recommendedCounters">Recommended Counters</h3>
                 <div id="counter-list" class="counter-list"></div>
             </div>
         </section>
@@ -132,21 +132,21 @@
         <!-- META ANALYSIS SECTION -->
         <section id="meta-section" class="section hidden">
             <div class="meta-intro">
-                <h2 data-i18n="metaTitle">📊 メタ分析ダッシュボード</h2>
-                <p data-i18n="metaDesc">ランク帯ごとの強いヒーローをチェック</p>
+                <h2 data-i18n="metaTitle">📊 Meta Analysis Dashboard</h2>
+                <p data-i18n="metaDesc">Check the strongest heroes by rank tier</p>
             </div>
 
             <!-- Rank Selector -->
             <div class="rank-selector">
-                <h3 data-i18n="selectRank">ランク帯を選択</h3>
+                <h3 data-i18n="selectRank">Select Rank Tier</h3>
                 <div class="rank-tabs">
-                    <button class="rank-tab active" data-rank="all" data-i18n="rankAll">全体</button>
-                    <button class="rank-tab" data-rank="bronze">ブロンズ</button>
-                    <button class="rank-tab" data-rank="silver">シルバー</button>
-                    <button class="rank-tab" data-rank="gold">ゴールド</button>
-                    <button class="rank-tab" data-rank="platinum">プラチナ</button>
-                    <button class="rank-tab" data-rank="diamond">ダイヤ</button>
-                    <button class="rank-tab" data-rank="master">マスター</button>
+                    <button class="rank-tab active" data-rank="all" data-i18n="rankAll">All</button>
+                    <button class="rank-tab" data-rank="bronze">Bronze</button>
+                    <button class="rank-tab" data-rank="silver">Silver</button>
+                    <button class="rank-tab" data-rank="gold">Gold</button>
+                    <button class="rank-tab" data-rank="platinum">Platinum</button>
+                    <button class="rank-tab" data-rank="diamond">Diamond</button>
+                    <button class="rank-tab" data-rank="master">Master</button>
                     <button class="rank-tab" data-rank="gm">GM+</button>
                 </div>
             </div>
@@ -154,15 +154,15 @@
             <!-- Meta Rankings -->
             <div class="meta-rankings">
                 <div class="meta-role-section">
-                    <h3><span class="role-icon tank">🛡️</span> <span data-i18n="roleTank">タンク</span></h3>
+                    <h3><span class="role-icon tank">🛡️</span> <span data-i18n="roleTank">Tank</span></h3>
                     <div id="meta-tank" class="meta-list"></div>
                 </div>
                 <div class="meta-role-section">
-                    <h3><span class="role-icon dps">⚔️</span> <span data-i18n="roleDps">ダメージ</span></h3>
+                    <h3><span class="role-icon dps">⚔️</span> <span data-i18n="roleDps">Damage</span></h3>
                     <div id="meta-dps" class="meta-list"></div>
                 </div>
                 <div class="meta-role-section">
-                    <h3><span class="role-icon support">💚</span> <span data-i18n="roleSupport">サポート</span></h3>
+                    <h3><span class="role-icon support">💚</span> <span data-i18n="roleSupport">Support</span></h3>
                     <div id="meta-support" class="meta-list"></div>
                 </div>
             </div>
@@ -171,15 +171,15 @@
         <!-- EVENTS SECTION -->
         <section id="events-section" class="section hidden">
             <div class="events-intro">
-                <h2 data-i18n="eventsTitle">📅 イベントカウントダウン</h2>
-                <p data-i18n="eventsDesc">次のイベント・アップデートまでの日数</p>
+                <h2 data-i18n="eventsTitle">📅 Event Countdown</h2>
+                <p data-i18n="eventsDesc">Days until next event or update</p>
             </div>
             <div id="events-list" class="events-list"></div>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <p data-i18n="footer">Overwatch 2のコミュニティリソース | 非公式ファンアプリ</p>
+            <p data-i18n="footer">Overwatch 2 Community Resource | Unofficial Fan App</p>
         </footer>
     </div>
 
