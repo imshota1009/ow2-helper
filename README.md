@@ -1,65 +1,63 @@
 # 🎮 OW2 Helper
 
-Overwatch 2プレイヤーのための総合ヘルパーアプリ
+A comprehensive helper app for Overwatch 2 players.
 
-[日本語](README.md) | [English](README_EN.md)
+## ✨ Features
 
-## ✨ 機能
+### 🗺️ Map Callouts Dictionary
+- 25+ maps with location callouts
+- Bilingual support (Japanese & English)
+- Search functionality
 
-### 🗺️ マップコールアウト辞書
-- 25+マップの場所の呼び方を収録
-- 日本語・英語両対応
-- 検索機能付き
+### ⚔️ Counter Pick Assistant
+- All 41 heroes supported
+- Select enemy team → Get counter recommendations
 
-### ⚔️ カウンターピック支援
-- 全41ヒーロー対応
-- 敵チームを選択 → おすすめカウンター提案
+### 📊 Meta Analysis Dashboard
+- 8 rank tiers (Bronze to GM+)
+- Hero rankings by role
+- Win rate & pick rate display
 
-### 📊 メタ分析ダッシュボード
-- 8ランク帯対応（ブロンズ〜GM+）
-- ロール別ヒーローランキング
-- 勝率・ピック率表示
+### 📅 Event Countdown
+- Real-time countdown to upcoming events and updates
 
-### 📅 イベントカウントダウン
-- 次のイベント・アップデートまでをリアルタイム表示
+## 🚀 Getting Started
 
-## 🚀 使い方
-
-1. このリポジトリをクローン
+1. Clone this repository
 ```bash
-git clone https://github.com/yourusername/ow2-helper.git
+git clone https://github.com/imshota1009/ow2-helper.git
 ```
 
-2. `index.html` をブラウザで開く
+2. Open `index.html` in your browser
 
-## 📁 ファイル構成
+## 📁 File Structure
 
 ```
 ow2-helper/
-├── index.html      # メインHTML
-├── style.css       # スタイル
-├── script.js       # ロジック・データ
-├── README.md       # このファイル
-├── LICENSE         # MITライセンス
-└── CONTRIBUTING.md # 貢献ガイドライン
+├── index.html      # Main HTML
+├── style.css       # Styles
+├── script.js       # Logic & Data
+├── README.md       # This file
+├── LICENSE         # MIT License
+└── CONTRIBUTING.md # Contribution guidelines
 ```
 
-## 🛠️ 技術スタック
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3 (Vanilla CSS)
 - JavaScript (Vanilla JS)
-- フレームワーク不使用
+- No frameworks
 
-## 📝 ライセンス
+## 📝 License
 
 [MIT License](LICENSE)
 
-## 🤝 コントリビューション
+## 🤝 Contributing
 
-[CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-## ⚠️ 免責事項
+## ⚠️ Disclaimer
 
-このアプリは非公式のファンプロジェクトです。Blizzard Entertainment, Inc.とは提携していません。
-Overwatch 2 および関連する名称は Blizzard Entertainment, Inc. の商標です。
+This is an unofficial fan project and is not affiliated with Blizzard Entertainment, Inc.
+Overwatch 2 and related names are trademarks of Blizzard Entertainment, Inc.

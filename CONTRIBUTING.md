@@ -1,49 +1,48 @@
-# コントリビューションガイドライン
+# Contributing Guidelines
 
-OW2 Helperへの貢献に興味を持っていただきありがとうございます！🎮
+Thank you for your interest in contributing to OW2 Helper! 🎮
 
-## 🤝 貢献の方法
+## 🤝 How to Contribute
 
-### 🐛 バグ報告
-1. [Issues](../../issues) で既存のバグ報告を確認
-2. 新しい Issue を作成し、詳細を記載
+### 🐛 Bug Reports
+1. Check [Issues](../../issues) for existing reports
+2. Create a new Issue with detailed information
 
-### 💡 機能提案
-1. [Issues](../../issues) で「Feature Request」として投稿
-2. どのような機能が欲しいか、なぜ必要かを説明
+### 💡 Feature Requests
+1. Post in [Issues](../../issues) as a "Feature Request"
+2. Explain what feature you want and why it's needed
 
-### 🔧 コードの貢献
+### 🔧 Code Contributions
 
-1. このリポジトリをフォーク
-2. 新しいブランチを作成
+1. Fork this repository
+2. Create a new branch
    ```bash
-   git checkout -b feature/新機能名
+   git checkout -b feature/your-feature-name
    ```
-3. 変更を加える
-4. コミット
+3. Make your changes
+4. Commit your changes
    ```bash
-   git commit -m "Add: 新機能の説明"
+   git commit -m "Add: description of your feature"
    ```
-5. プッシュ
+5. Push to your fork
    ```bash
-   git push origin feature/新機能名
+   git push origin feature/your-feature-name
    ```
-6. Pull Request を作成
+6. Create a Pull Request
 
-## 📋 コーディング規約
+## 📋 Coding Standards
 
-- インデント: スペース4つ
-- 変数名: camelCase
-- 日本語・英語両対応のテキストは `i18n` オブジェクトに追加
-- 新しいヒーローデータは `heroData` と `counterData` に追加
+- Indentation: 4 spaces
+- Variable names: camelCase
+- Add bilingual text (Japanese & English) to the `i18n` object
+- Add new hero data to `heroData` and `counterData`
 
-## ✅ チェックリスト
+## ✅ Before Submitting
 
-Pull Request を送る前に:
-- [ ] コードが正しく動作することを確認
-- [ ] 日本語・英語の両方のテキストを追加
-- [ ] 既存の機能が壊れていないことを確認
+- [ ] Code works correctly
+- [ ] Added both Japanese and English text
+- [ ] Existing features are not broken
 
-## 🙏 ありがとうございます！
+## 🙏 Thank You!
 
-あなたの貢献がこのプロジェクトをより良くします。
+Your contributions make this project better.
